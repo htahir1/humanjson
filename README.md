@@ -3,9 +3,11 @@
 *Hello, human.* An open spec for one public file that tells AI agents what you've done, what you're
 open to, what you're not, and how to approach you. Think `robots.txt`, for people.
 
+**→ Make yours at [humanjson.org](https://humanjson.org/)**: chat with an agent, drop in your resume or GitHub, and publish a free profile at `humanjson.org/u/you`. Example: [humanjson.org/u/hamza](https://humanjson.org/u/hamza).
+
 - **Spec:** [protocol.md](protocol.md) (v0.5)
 - **Schema:** [schema/human.schema.json](schema/human.schema.json) (JSON Schema draft-07)
-- **Website:** [humanjson.org](https://humanjson.org) (make one, host one, see an example)
+- **Website:** [https://humanjson.org](https://humanjson.org/) (make one, host one, see an example)
 - **Status:** draft. Feedback and proposals welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What's in a human.json
