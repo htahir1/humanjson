@@ -544,7 +544,7 @@ var OH = (function () {
     skills.sort(function (a, b) { return b.level - a.level || b.years - a.years; });
     var links = [{ label: 'GitHub', url: user.html_url || 'https://github.com/' + user.login }];
     if (user.blog) links.push({ label: 'Website', url: /^https?:/.test(user.blog) ? user.blog : 'https://' + user.blog });
-    return { name: user.name || user.login, headline: user.bio || '', summary: '', location: place(user.location), links: links, skills: skills, projects: projects,
+    return { name: user.name || user.login, headline: user.bio || '', photo: /^https:\/\//.test(user.avatar_url || '') ? user.avatar_url : undefined, summary: '', location: place(user.location), links: links, skills: skills, projects: projects,
       experience: [],
       sources: [{ type: 'github', ref: user.html_url || 'https://github.com/' + user.login, imported: (today || new Date().toISOString()).slice(0, 10) }] };
   }
@@ -637,7 +637,7 @@ var OH = (function () {
   // Fold `part` into `base`: fill what's empty, add what's missing, never overwrite what the person wrote.
   function mergeProfile(base, part) {
     var p = JSON.parse(JSON.stringify(base)), rep = { filled: [], skills: 0, projects: 0, experience: 0, references: 0, links: 0 };
-    ['name', 'headline', 'summary'].forEach(function (k) { if (!p[k] && part[k]) { p[k] = part[k]; rep.filled.push(k); } });
+    ['name', 'headline', 'photo', 'summary'].forEach(function (k) { if (!p[k] && part[k]) { p[k] = part[k]; rep.filled.push(k); } });
     if (part.location && part.location.city && !(p.location && p.location.city)) {
       p.location = { city: part.location.city, country: part.location.country || '', utc_offset: part.location.utc_offset != null ? part.location.utc_offset : (p.location || {}).utc_offset || 0 };
       rep.filled.push('location');

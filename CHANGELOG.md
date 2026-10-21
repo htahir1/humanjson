@@ -7,6 +7,7 @@
 - `open_to` entries can list `topics`; a new `topic` check declines requests on other topics.
 - `agent_policy.feedback.url`: agents post a short structured note after deciding.
 - Files with `hellohuman/`, `approach/` and `open-hire/` spec strings are still read.
+- Optional `photo`: an https URL to a picture of the person (for example a GitHub avatar).
 
 ## 0.3
 

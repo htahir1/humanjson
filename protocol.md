@@ -69,6 +69,7 @@ the "website" field on LinkedIn.
   "name": "Noor Haddad",
   "pronouns": "she/her",                    // optional
   "headline": "ML platform engineer",
+  "photo": "https://avatars.githubusercontent.com/u/0000000",  // optional: an https image URL
   "location": { "city": "Berlin", "country": "DE", "utc_offset": 1 },
   "status": "looking",                      // looking | open | not-looking
   "updated": "2026-10-12",
