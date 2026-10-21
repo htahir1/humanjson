@@ -19,15 +19,22 @@ Read the schema and the example before you start.
 Only make a file for the user you're working with, or for someone who has asked you to and agreed to
 what goes in it. Never publish a profile of someone without their say-so.
 
-**Updating instead of starting over?** If they already published one, read it back with their token
-(it's in `.human-json-token` if you published it before):
+**Updating instead of starting over?** The user gives you their edit link,
+`https://humanjson.org/#/edit/<token>` (or just the token, or it's in `.human-json-token` if you
+published before). The token is the part after `#/edit/`. Read the profile back with it; no handle needed:
 
 ```sh
-curl -s https://humanjson.org/api/publish/<handle> -H "X-Human-Token: $(cat .human-json-token)"
+curl -s https://humanjson.org/api/me -H "X-Human-Token: <token>"
 ```
 
-It returns `{"profile", "url", "page"}`. Change what they ask for, validate (step 3), and publish with
-the same token (step 4). Skip steps 1 and 2.
+It returns `{"handle", "profile", "url", "page"}`. Change only what they ask for and keep everything
+else as it is. Validate (step 3), then publish with the same token:
+`{"profile": <the updated file>, "token": "<token>"}` to `POST https://humanjson.org/api/publish`
+(step 4). Skip steps 1 and 2. Show the user what changed before you publish.
+
+The edit link is a secret: anyone with it can change the profile. Never print it back in full, never
+put it in a commit, a file you share or the profile itself. If you save it, use `.human-json-token`
+and add that to `.gitignore`.
 
 Before you start, tell the user one thing: **the file is public.** Anyone can read it, so it should
 only contain what they'd tell a stranger. Agents are asked to follow its rules, but nothing forces them.
@@ -125,7 +132,7 @@ Offer these and let the user pick:
 
 The hosted file gets `agent_policy.feedback.url` automatically. Agents that read it send a short
 note saying whether they approached, asked or declined and why. To read them:
-`curl -s https://humanjson.org/api/feedback/<handle> -H "X-Human-Token: $(cat .human-json-token)"`.
+`curl -s https://humanjson.org/api/feedback/<handle> -H "X-Human-Token: <token>"`.
 Summarise them for the user: the most common reasons for declining, what requests left out, near
 misses (declined on one condition). Suggest changes to the file only if a pattern shows up.
 
