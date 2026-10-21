@@ -5,7 +5,7 @@ open to, what you're not, and how to approach you. Think `robots.txt`, for peopl
 
 - **Spec:** [protocol.md](protocol.md) (v0.4)
 - **Schema:** [schema/human.schema.json](schema/human.schema.json) (JSON Schema draft-07)
-- **Website:** [humanjson.org](https://zenml-io--humanjson-web.us-east.modal.run) (make one, host one, see an example)
+- **Website:** [humanjson.org](https://humanjson.org) (make one, host one, see an example)
 - **Status:** draft. Feedback and proposals welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What's in a human.json
@@ -48,17 +48,17 @@ Full examples are in [examples/](examples/) (Noor and Chidi are fictional; Hamza
 
 1. `https://<your-site>/.well-known/human.json`
 2. `https://raw.githubusercontent.com/<user>/<user>/HEAD/human.json` (your GitHub profile repo)
-3. A free hosted copy: `https://zenml-io--humanjson-web.us-east.modal.run/u/<handle>/human.json`
+3. A free hosted copy: `https://humanjson.org/u/<handle>/human.json`
 4. Any page you own can point to it: `<link rel="alternate" type="application/human+json" href="…">`
 
 ## Make one
 
-- **On the website:** [https://zenml-io--humanjson-web.us-east.modal.run/#/make](https://zenml-io--humanjson-web.us-east.modal.run/#/make)
-- **With a terminal agent** (Claude Code, Codex): `Read https://zenml-io--humanjson-web.us-east.modal.run/skill/SKILL.md and follow it to make (or update) my human.json and publish it.`
+- **On the website:** [https://humanjson.org/#/make](https://humanjson.org/#/make)
+- **With a terminal agent** (Claude Code, Codex): `Read https://humanjson.org/skill/SKILL.md and follow it to make (or update) my human.json and publish it.`
 - **By hand:** copy an example, edit it, and check it:
 
 ```sh
-curl -s -X POST https://zenml-io--humanjson-web.us-east.modal.run/api/validate -H 'Content-Type: application/json' --data-binary @human.json
+curl -s -X POST https://humanjson.org/api/validate -H 'Content-Type: application/json' --data-binary @human.json
 ```
 
 ## For agents reading one

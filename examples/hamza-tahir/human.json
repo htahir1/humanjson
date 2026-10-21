@@ -162,7 +162,7 @@
     },
     "notes": "This is Hamza's own file, used as the main example on this site. The other example people on this site are made up.",
     "feedback": {
-      "url": "https://zenml-io--humanjson-web.us-east.modal.run/api/feedback/hamza-tahir"
+      "url": "https://humanjson.org/api/feedback/hamza-tahir"
     }
   },
   "skills": [

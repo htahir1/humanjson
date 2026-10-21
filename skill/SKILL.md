@@ -9,10 +9,10 @@ You are helping the user write their `human.json`: one JSON file that tells agen
 what they're open to (a job, freelance work, advising, speaking, ...), what they're not open to (sales
 pitches, agency recruiters, ...), and the rules for approaching them. Spec and schema:
 
-- Spec: https://zenml-io--humanjson-web.us-east.modal.run/protocol.md
-- Schema (JSON Schema draft-07): https://zenml-io--humanjson-web.us-east.modal.run/schema/human.schema.json
-- Skill names agents match on: https://zenml-io--humanjson-web.us-east.modal.run/vocabulary.json
-- A complete example: https://zenml-io--humanjson-web.us-east.modal.run/p/noor-haddad/human.json
+- Spec: https://humanjson.org/protocol.md
+- Schema (JSON Schema draft-07): https://humanjson.org/schema/human.schema.json
+- Skill names agents match on: https://humanjson.org/vocabulary.json
+- A complete example: https://humanjson.org/p/noor-haddad/human.json
 
 Read the schema and the example before you start.
 
@@ -23,7 +23,7 @@ what goes in it. Never publish a profile of someone without their say-so.
 (it's in `.human-json-token` if you published it before):
 
 ```sh
-curl -s https://zenml-io--humanjson-web.us-east.modal.run/api/publish/<handle> -H "X-Human-Token: $(cat .human-json-token)"
+curl -s https://humanjson.org/api/publish/<handle> -H "X-Human-Token: $(cat .human-json-token)"
 ```
 
 It returns `{"profile", "url", "page"}`. Change what they ask for, validate (step 3), and publish with
@@ -95,7 +95,7 @@ Rules for the draft:
 Write the file as `human.json`, then check it against the schema:
 
 ```sh
-curl -s -X POST https://zenml-io--humanjson-web.us-east.modal.run/api/validate \
+curl -s -X POST https://humanjson.org/api/validate \
   -H 'Content-Type: application/json' --data-binary @human.json
 ```
 
@@ -110,7 +110,7 @@ Offer these and let the user pick:
 - **humanjson.org hosting** (one call, free): 
   ```sh
   jq -n --slurpfile p human.json '{profile: $p[0]}' | curl -s -X POST \
-    https://zenml-io--humanjson-web.us-east.modal.run/api/publish -H 'Content-Type: application/json' --data-binary @-
+    https://humanjson.org/api/publish -H 'Content-Type: application/json' --data-binary @-
   ```
   The answer has `url` (the file), `page` and, the first time only, a `token`. Save the token to
   `.human-json-token` (add it to `.gitignore`) and tell the user: it's the only way to update or delete
@@ -123,7 +123,7 @@ Offer these and let the user pick:
 
 The hosted file gets `agent_policy.feedback.url` automatically. Agents that read it send a short
 note saying whether they approached, asked or declined and why. To read them:
-`curl -s https://zenml-io--humanjson-web.us-east.modal.run/api/feedback/<handle> -H "X-Human-Token: $(cat .human-json-token)"`.
+`curl -s https://humanjson.org/api/feedback/<handle> -H "X-Human-Token: $(cat .human-json-token)"`.
 Summarise them for the user: the most common reasons for declining, what requests left out, near
 misses (declined on one condition). Suggest changes to the file only if a pattern shows up.
 
