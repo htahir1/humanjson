@@ -1,0 +1,506 @@
+{
+  "spec": "human.json/0.4",
+  "handle": "noor-haddad",
+  "name": "Noor Haddad",
+  "pronouns": "she/her",
+  "headline": "ML platform engineer. I make training and serving boring so researchers don't have to think about it.",
+  "location": {
+    "city": "Berlin",
+    "country": "DE",
+    "utc_offset": 1
+  },
+  "status": "looking",
+  "updated": "2026-10-12",
+  "summary": "Eight years building the plumbing under machine learning teams: GPU scheduling, feature pipelines, model serving and the evals that tell you a release is safe. Last role was tech lead for ML infrastructure at a 300-person health-tech company. I want a small platform team at a company where the models matter to someone's day.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://example.com/noor/code"
+    },
+    {
+      "label": "Talk: Boring GPUs (PyData Berlin 2025)",
+      "url": "https://example.com/talks/boring-gpus"
+    },
+    {
+      "label": "Writing",
+      "url": "https://example.com/noor/notes"
+    }
+  ],
+  "open_to": [
+    {
+      "type": "job",
+      "status": "looking",
+      "roles": [
+        "Staff ML platform engineer",
+        "Tech lead, ML infrastructure",
+        "Founding infra engineer (AI)"
+      ],
+      "seniority": "staff",
+      "employment": [
+        "full-time"
+      ],
+      "work_mode": [
+        "remote",
+        "hybrid"
+      ],
+      "locations": [
+        "Berlin",
+        "Amsterdam"
+      ],
+      "relocate": false,
+      "max_tz_diff_hours": 3,
+      "work_auth": [
+        "EU"
+      ],
+      "needs_sponsorship": false,
+      "comp": {
+        "currency": "EUR",
+        "base_min": 115000,
+        "target": 130000,
+        "disclose": "public"
+      },
+      "start": "2027-01-01",
+      "stages": [
+        "series-a",
+        "series-b",
+        "growth"
+      ],
+      "domains_avoid": [
+        "defense",
+        "gambling",
+        "adtech"
+      ],
+      "domains_prefer": [
+        "health",
+        "climate",
+        "science"
+      ],
+      "max_on_call": "light",
+      "deal_breakers": [
+        "No defence, gambling or ad targeting work.",
+        "No primary on-call more often than one week in six.",
+        "Not looking to manage people full-time yet; tech lead is fine."
+      ],
+      "nice_to_haves": [
+        "A research team that ships to real users",
+        "Budget for conferences and open source time",
+        "Four-day week, or a clear path to it"
+      ],
+      "notes": "Staff ML platform or infra lead roles at companies where the models matter: health, climate, science. Remote in Europe or hybrid in Berlin."
+    },
+    {
+      "type": "advising",
+      "status": "open",
+      "max_hours_per_month": 4,
+      "comp": [
+        "paid",
+        "equity"
+      ],
+      "stages": [
+        "seed",
+        "series-a"
+      ],
+      "domains_prefer": [
+        "health",
+        "climate",
+        "science"
+      ],
+      "domains_avoid": [
+        "defense",
+        "gambling",
+        "adtech"
+      ],
+      "notes": "Happy to advise early ML teams on platform and evals."
+    }
+  ],
+  "not_open_to": [
+    "sales",
+    "recruiting_agency"
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": 5,
+      "years": 9,
+      "evidence": [
+        "eval-gate",
+        "feature-store",
+        "zenline"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "level": 5,
+      "years": 6,
+      "evidence": [
+        "gpu-scheduler",
+        "serving-mesh"
+      ]
+    },
+    {
+      "name": "MLOps",
+      "level": 5,
+      "years": 6,
+      "evidence": [
+        "gpu-scheduler",
+        "serving-mesh",
+        "zenline"
+      ]
+    },
+    {
+      "name": "Go",
+      "level": 4,
+      "years": 4,
+      "evidence": [
+        "gpu-scheduler"
+      ]
+    },
+    {
+      "name": "Evals",
+      "level": 4,
+      "years": 2,
+      "evidence": [
+        "eval-gate"
+      ]
+    },
+    {
+      "name": "LLMs",
+      "level": 4,
+      "years": 2,
+      "evidence": [
+        "eval-gate",
+        "triage-rag"
+      ]
+    },
+    {
+      "name": "RAG",
+      "level": 3,
+      "years": 2,
+      "evidence": [
+        "triage-rag"
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "level": 3,
+      "years": 5,
+      "evidence": [
+        "serving-mesh"
+      ]
+    },
+    {
+      "name": "Terraform",
+      "level": 4,
+      "years": 5,
+      "evidence": [
+        "gpu-scheduler"
+      ]
+    },
+    {
+      "name": "GCP",
+      "level": 4,
+      "years": 4,
+      "evidence": [
+        "gpu-scheduler",
+        "feature-store"
+      ]
+    },
+    {
+      "name": "AWS",
+      "level": 3,
+      "years": 3,
+      "evidence": []
+    },
+    {
+      "name": "Kafka",
+      "level": 3,
+      "years": 3,
+      "evidence": [
+        "feature-store"
+      ]
+    },
+    {
+      "name": "Data engineering",
+      "level": 4,
+      "years": 5,
+      "evidence": [
+        "feature-store"
+      ]
+    },
+    {
+      "name": "Observability",
+      "level": 4,
+      "years": 5,
+      "evidence": [
+        "serving-mesh"
+      ]
+    },
+    {
+      "name": "Distributed systems",
+      "level": 4,
+      "years": 6,
+      "evidence": [
+        "gpu-scheduler",
+        "feature-store"
+      ]
+    },
+    {
+      "name": "Technical writing",
+      "level": 4,
+      "years": 6,
+      "evidence": [
+        "zenline"
+      ]
+    },
+    {
+      "name": "Mentoring",
+      "level": 4,
+      "years": 4,
+      "evidence": []
+    },
+    {
+      "name": "Rust",
+      "level": 2,
+      "years": 1,
+      "evidence": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "gpu-scheduler",
+      "title": "Fair-share GPU scheduler",
+      "year": 2025,
+      "role": "Tech lead, 3 engineers",
+      "summary": "Replaced a shared Slack channel of 'who is using the A100s' with a Kubernetes scheduler extension that queues training jobs by team quota and preempts politely.",
+      "outcome": "GPU utilisation went from 41% to 78%; median wait for a training slot fell from 9 hours to 40 minutes.",
+      "stack": [
+        "Kubernetes",
+        "Go",
+        "Terraform",
+        "GCP"
+      ],
+      "link": "https://example.com/noor/code/fairshare"
+    },
+    {
+      "id": "eval-gate",
+      "title": "Release gate for clinical LLM features",
+      "year": 2026,
+      "role": "Designed and built it, then handed it to the applied team",
+      "summary": "Every model or prompt change runs 1,900 graded cases (clinician-written) before it can ship. Failing cases block the deploy and open a ticket with a diff of the outputs.",
+      "outcome": "Caught 14 regressions in six months that would have reached patients' summaries; the clinicians now write the tests themselves.",
+      "stack": [
+        "Python",
+        "Evals",
+        "LLMs"
+      ],
+      "link": "https://example.com/noor/notes/eval-gate"
+    },
+    {
+      "id": "serving-mesh",
+      "title": "Model serving on one platform",
+      "year": 2024,
+      "role": "Lead engineer",
+      "summary": "Moved 23 models from hand-rolled Flask services onto one serving layer with canaries, shadow traffic and per-model dashboards.",
+      "outcome": "Deploys went from a two-day ticket to a merge; p95 latency down 35%; one on-call rota instead of five.",
+      "stack": [
+        "Kubernetes",
+        "PyTorch",
+        "Observability"
+      ],
+      "link": ""
+    },
+    {
+      "id": "feature-store",
+      "title": "Streaming feature store",
+      "year": 2023,
+      "role": "One of two engineers",
+      "summary": "Online and offline features from the same definitions, fed by Kafka, so training and serving stop disagreeing.",
+      "outcome": "Removed a whole class of training/serving skew bugs; 31 features in production by year end.",
+      "stack": [
+        "Python",
+        "Kafka",
+        "GCP",
+        "Data engineering"
+      ],
+      "link": ""
+    },
+    {
+      "id": "triage-rag",
+      "title": "Support triage assistant",
+      "year": 2025,
+      "role": "Prototype in a two-week hack, then productionised with one other engineer",
+      "summary": "Retrieval over 40k past tickets suggests a category, a reply draft and the three most similar resolved cases.",
+      "outcome": "First-response time down 28%; agents accept the suggested category 83% of the time.",
+      "stack": [
+        "RAG",
+        "LLMs",
+        "Python"
+      ],
+      "link": ""
+    },
+    {
+      "id": "zenline",
+      "title": "Open source: pipeline step caching plugin",
+      "year": 2022,
+      "role": "Author and maintainer",
+      "summary": "A small plugin for an open-source ML pipeline framework that caches step outputs by content hash across runs and machines.",
+      "outcome": "About 1,100 GitHub stars; merged upstream in 2024. The docs are the part people thank me for.",
+      "stack": [
+        "Python",
+        "MLOps",
+        "Technical writing"
+      ],
+      "link": "https://example.com/noor/code/stepcache"
+    }
+  ],
+  "experience": [
+    {
+      "org": "Kliniq (health tech, Series B)",
+      "title": "Tech lead, ML infrastructure",
+      "from": "2022",
+      "to": "2026",
+      "summary": "Built and led the ML platform team (3 → 5). Owned training infra, serving and the eval gate."
+    },
+    {
+      "org": "Freightline (logistics)",
+      "title": "Senior data engineer",
+      "from": "2019",
+      "to": "2022",
+      "summary": "Streaming pipelines and the first feature store; moved the team from cron to an orchestrator."
+    },
+    {
+      "org": "Spreetal Institute of Technology (fictional)",
+      "title": "Research engineer",
+      "from": "2017",
+      "to": "2019",
+      "summary": "Kept a 40-GPU lab cluster alive; co-author on two papers about scheduling."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why are you leaving Kliniq?",
+      "a": "The platform is in good shape and the team is self-sufficient; I'd like to build the next one from an earlier stage. No drama, and they're a reference.",
+      "tags": [
+        "motivation",
+        "leaving"
+      ]
+    },
+    {
+      "q": "Would you manage people?",
+      "a": "Not as a full-time manager yet. I like being tech lead for 3-6 engineers: setting direction, reviewing designs, running hiring loops, mentoring. I'd talk about management in a year or two.",
+      "tags": [
+        "management",
+        "leadership",
+        "manager"
+      ]
+    },
+    {
+      "q": "What's your on-call experience?",
+      "a": "Five years on rotation, including a year as incident commander for the ML platform. I'm fine with on-call that's shared fairly and with good runbooks. One week in six is my limit for primary.",
+      "tags": [
+        "on-call",
+        "incidents",
+        "reliability"
+      ]
+    },
+    {
+      "q": "Have you run Kafka in production?",
+      "a": "Yes, for three years at Freightline and Kliniq: the feature store's online path, around 20k events a second at peak. I'm comfortable operating it but I'm not a Kafka internals person.",
+      "tags": [
+        "kafka",
+        "streaming",
+        "production"
+      ]
+    },
+    {
+      "q": "How much LLM work have you done?",
+      "a": "Two years: the eval gate for clinical summaries and the support triage assistant. My strength is the infrastructure and evaluation around models, not training foundation models.",
+      "tags": [
+        "llms",
+        "ai",
+        "genai",
+        "evals"
+      ]
+    },
+    {
+      "q": "Remote or office?",
+      "a": "Remote within Europe, or hybrid in Berlin or Amsterdam up to three days a week. I'm not relocating in 2027.",
+      "tags": [
+        "remote",
+        "office",
+        "hybrid",
+        "relocation"
+      ]
+    },
+    {
+      "q": "Do you need visa sponsorship?",
+      "a": "No, I'm an EU citizen. I can't work for a US entity directly without an employer of record.",
+      "tags": [
+        "visa",
+        "sponsorship",
+        "work authorisation"
+      ]
+    },
+    {
+      "q": "What does a great first 90 days look like?",
+      "a": "Week one: ship something small. First month: shadow on-call, interview every researcher about where their time goes. By day 90: one painful thing measurably gone and a written six-month platform plan the team agrees with.",
+      "tags": [
+        "onboarding",
+        "first 90 days",
+        "plan"
+      ]
+    },
+    {
+      "q": "Notice period?",
+      "a": "I'm between roles, so I can start on 1 January 2027 or a little earlier for the right team.",
+      "tags": [
+        "notice",
+        "start",
+        "availability"
+      ]
+    },
+    {
+      "q": "What kind of team do you work best in?",
+      "a": "Small, written-first, with researchers close by. I like design docs, honest postmortems and teams that delete code.",
+      "tags": [
+        "culture",
+        "team",
+        "values"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Lena Brandt",
+      "relation": "VP Engineering at Kliniq, Noor's manager 2022-2026",
+      "quote": "Noor turned our GPU budget from our biggest argument into a solved problem, and wrote it down so well that nobody needs her to run it.",
+      "contact": "on request"
+    },
+    {
+      "name": "Tomás Ruiz",
+      "relation": "Applied scientist, worked with Noor on the eval gate",
+      "quote": "She made shipping safe without making it slow. Clinicians trust our releases now.",
+      "contact": "on request"
+    }
+  ],
+  "agent_policy": {
+    "intro_requires": [
+      "written_jd",
+      "published_comp",
+      "named_hiring_manager"
+    ],
+    "auto_decline": true,
+    "escalate": [
+      "equity and title negotiation",
+      "anything about a people-manager role",
+      "relocation"
+    ],
+    "contact": {
+      "method": "email",
+      "address": "noor@example.com",
+      "subject_prefix": "[human.json]"
+    },
+    "response_time": "3 working days",
+    "notes": "Please don't summarise me from other sites; everything I want considered is in these files. One message per role is plenty. This is a fictional example profile for the human.json site; the person, companies and quotes are made up."
+  }
+}

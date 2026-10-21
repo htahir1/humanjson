@@ -1,0 +1,30 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema==4.23.0
+      - name: Every example validates against the schema
+        run: |
+          python - <<'PY'
+          import glob, json, sys, jsonschema
+          v = jsonschema.Draft7Validator(json.load(open("schema/human.schema.json")))
+          bad = 0
+          for f in sorted(glob.glob("examples/*/human.json")):
+              errs = list(v.iter_errors(json.load(open(f))))
+              print(f, "ok" if not errs else f"{len(errs)} problem(s)")
+              for e in errs[:5]:
+                  print("  ", "/".join(map(str, e.absolute_path)), e.message)
+              bad += len(errs)
+          sys.exit(1 if bad else 0)
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: The reference matcher loads
+        run: node -e "const H=require('./core.js'); H.setVocab(require('./vocabulary.json')); const p=require('./examples/noor-haddad/human.json'); console.log(H.summary(p).name)"

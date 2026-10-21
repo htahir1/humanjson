@@ -1,0 +1,214 @@
+{
+  "spec": "human.json/0.4",
+  "handle": "hamza-tahir",
+  "name": "Hamza Tahir",
+  "headline": "Founder of ZenML. AI engineer working on agents and ML in production.",
+  "location": {
+    "city": "Munich",
+    "country": "DE",
+    "utc_offset": 1
+  },
+  "status": "open",
+  "updated": "2026-10-21",
+  "summary": "I'm the founder of ZenML, an open-source AI platform that takes teams from ML pipelines to agents. What I think about most is getting agents and ML systems to work in production: evals, orchestration, and what breaks once real users arrive. If you're working on the same problems, I'd like to hear about them.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/htahir1"
+    },
+    {
+      "label": "ZenML",
+      "url": "https://zenml.io"
+    },
+    {
+      "label": "ZenML on GitHub",
+      "url": "https://github.com/zenml-io/zenml"
+    }
+  ],
+  "open_to": [
+    {
+      "type": "intro",
+      "status": "open",
+      "topics": [
+        "agents in production",
+        "evals",
+        "ML in production",
+        "LLMOps",
+        "MLOps"
+      ],
+      "notes": "Conversations with people working on agents in production, evals, or machine learning in production. Bring a real problem you're working on."
+    }
+  ],
+  "not_open_to": [
+    "sales",
+    "marketing",
+    "recruiting_agency"
+  ],
+  "projects": [
+    {
+      "id": "zenml",
+      "title": "ZenML",
+      "role": "Founder",
+      "summary": "One AI platform from pipelines to agents. Open source, Python.",
+      "outcome": "5,600+ GitHub stars and 665 forks (October 2026).",
+      "stack": [
+        "Python",
+        "MLOps",
+        "LLMOps",
+        "Agents"
+      ],
+      "link": "https://github.com/zenml-io/zenml",
+      "source": "github"
+    },
+    {
+      "id": "kitaru",
+      "title": "Kitaru",
+      "year": 2026,
+      "role": "ZenML project",
+      "summary": "Agent traces you can run, not just read: durable execution, checkpoints and replay for AI agents.",
+      "outcome": "310 GitHub stars in its first months.",
+      "stack": [
+        "Python",
+        "Agents",
+        "MCP"
+      ],
+      "link": "https://github.com/zenml-io/kitaru",
+      "source": "github"
+    },
+    {
+      "id": "mcp-zenml",
+      "title": "ZenML MCP server",
+      "year": 2025,
+      "role": "ZenML project",
+      "summary": "Connects MCP clients like Claude Desktop and Cursor to ZenML pipelines.",
+      "stack": [
+        "Python",
+        "MCP",
+        "LLMOps"
+      ],
+      "link": "https://github.com/zenml-io/mcp-zenml",
+      "source": "github"
+    },
+    {
+      "id": "zenml-document-processing-llms",
+      "title": "Document processing with LLMs on ZenML",
+      "year": 2025,
+      "summary": "An example of LLM document-processing pipelines, built on ZenML.",
+      "stack": [
+        "Python",
+        "LLMs"
+      ],
+      "link": "https://github.com/htahir1/zenml-document-processing-llms",
+      "source": "github"
+    },
+    {
+      "id": "cdtm-mcp",
+      "title": "cdtm-mcp",
+      "year": 2026,
+      "summary": "An MCP server for the CDTM Community Portal: search CDTM students and alumni from Claude in plain language.",
+      "stack": [
+        "Python",
+        "MCP"
+      ],
+      "link": "https://github.com/htahir1/cdtm-mcp",
+      "source": "github"
+    }
+  ],
+  "experience": [
+    {
+      "org": "ZenML",
+      "title": "Founder",
+      "to": "now"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What do you want to talk about?",
+      "a": "Agents in production, evals, and machine learning in production. The more concrete the problem, the better.",
+      "tags": [
+        "topics",
+        "agents",
+        "evals",
+        "mlops"
+      ]
+    },
+    {
+      "q": "What is ZenML?",
+      "a": "One AI platform from pipelines to agents. It's open source: github.com/zenml-io/zenml.",
+      "tags": [
+        "zenml",
+        "company"
+      ]
+    },
+    {
+      "q": "Can I pitch you a product or a marketing service?",
+      "a": "No. I'm not open to sales or marketing pitches.",
+      "tags": [
+        "sales",
+        "marketing",
+        "pitch"
+      ]
+    }
+  ],
+  "agent_policy": {
+    "auto_decline": true,
+    "intro_requires": [
+      "written_jd"
+    ],
+    "escalate": [],
+    "contact": {
+      "method": "url",
+      "url": "https://github.com/htahir1"
+    },
+    "notes": "This is Hamza's own file, used as the main example on this site. The other example people on this site are made up.",
+    "feedback": {
+      "url": "https://zenml-io--humanjson-web.us-east.modal.run/api/feedback/hamza-tahir"
+    }
+  },
+  "skills": [
+    {
+      "name": "MLOps",
+      "level": 5,
+      "years": 6,
+      "evidence": [
+        "zenml"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": 5,
+      "years": 10,
+      "evidence": [
+        "zenml",
+        "cdtm-mcp"
+      ]
+    },
+    {
+      "name": "LLMOps",
+      "level": 4,
+      "years": 3,
+      "evidence": [
+        "zenml",
+        "mcp-zenml"
+      ]
+    },
+    {
+      "name": "Agents",
+      "level": 4,
+      "years": 2,
+      "evidence": [
+        "kitaru",
+        "zenml"
+      ]
+    },
+    {
+      "name": "MCP",
+      "level": 3,
+      "years": 1,
+      "evidence": [
+        "mcp-zenml",
+        "cdtm-mcp"
+      ]
+    }
+  ]
+}

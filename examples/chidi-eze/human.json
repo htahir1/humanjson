@@ -1,0 +1,382 @@
+{
+  "spec": "human.json/0.4",
+  "handle": "chidi-eze",
+  "name": "Chidi Eze",
+  "pronouns": "he/him",
+  "headline": "Developer advocate. Tutorials that work on the first try, and a community that answers its own questions.",
+  "location": {
+    "city": "Lagos",
+    "country": "NG",
+    "utc_offset": 1
+  },
+  "status": "looking",
+  "updated": "2026-10-01",
+  "summary": "Five years in developer relations after three as a backend developer. I write docs and sample apps, run meetups across West Africa, and turn forum complaints into issues engineers can fix. Right now I want contract or freelance work, two or three clients at most, ideally devtools and AI infrastructure companies.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://example.com/chidi/code"
+    },
+    {
+      "label": "YouTube-style tutorials",
+      "url": "https://example.com/chidi/videos"
+    },
+    {
+      "label": "Newsletter",
+      "url": "https://example.com/chidi/letters"
+    }
+  ],
+  "open_to": [
+    {
+      "type": "job",
+      "status": "looking",
+      "roles": [
+        "Developer advocate (contract)",
+        "Docs and tutorials contractor",
+        "DevRel lead, part-time"
+      ],
+      "seniority": "senior",
+      "employment": [
+        "contract",
+        "freelance",
+        "part-time"
+      ],
+      "work_mode": [
+        "remote"
+      ],
+      "locations": [],
+      "relocate": false,
+      "max_tz_diff_hours": 6,
+      "work_auth": [
+        "NG"
+      ],
+      "needs_sponsorship": false,
+      "comp": {
+        "currency": "USD",
+        "base_min": 70000,
+        "target": 90000,
+        "disclose": "public"
+      },
+      "start": "2026-11-02",
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b",
+        "growth",
+        "nonprofit"
+      ],
+      "domains_avoid": [
+        "gambling",
+        "crypto"
+      ],
+      "domains_prefer": [
+        "devtools",
+        "education",
+        "fintech"
+      ],
+      "max_on_call": "none",
+      "deal_breakers": [
+        "Contract or freelance only for now; I'm not looking for a full-time job.",
+        "No crypto token projects or betting apps.",
+        "I won't write content that hides pricing or limits from developers."
+      ],
+      "nice_to_haves": [
+        "Budget for community events in Lagos, Accra and Nairobi",
+        "Access to the engineers who own the API",
+        "Paid in USD or EUR"
+      ]
+    },
+    {
+      "type": "freelance",
+      "status": "looking",
+      "rate": {
+        "currency": "USD",
+        "day_min": 600,
+        "disclose": "public"
+      },
+      "max_days_per_week": 4,
+      "min_weeks": 2,
+      "max_weeks": 52,
+      "work_mode": [
+        "remote"
+      ]
+    },
+    {
+      "type": "speaking",
+      "status": "open",
+      "notes": "Conference talks and workshops on developer experience. Travel and a fee, or travel for community events."
+    }
+  ],
+  "not_open_to": [
+    "sales"
+  ],
+  "skills": [
+    {
+      "name": "Developer relations",
+      "level": 5,
+      "years": 5,
+      "evidence": [
+        "lagos-builders",
+        "quickstart-rewrite",
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "Technical writing",
+      "level": 5,
+      "years": 6,
+      "evidence": [
+        "quickstart-rewrite",
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": 4,
+      "years": 5,
+      "evidence": [
+        "ai-sample-apps",
+        "quickstart-rewrite"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": 4,
+      "years": 7,
+      "evidence": [
+        "quickstart-rewrite"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "level": 4,
+      "years": 6,
+      "evidence": [
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": 3,
+      "years": 4,
+      "evidence": [
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": 3,
+      "years": 2,
+      "evidence": [
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "LLMs",
+      "level": 3,
+      "years": 2,
+      "evidence": [
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "RAG",
+      "level": 2,
+      "years": 1,
+      "evidence": [
+        "ai-sample-apps"
+      ]
+    },
+    {
+      "name": "Go-to-market",
+      "level": 3,
+      "years": 3,
+      "evidence": [
+        "lagos-builders"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": 3,
+      "years": 5,
+      "evidence": []
+    },
+    {
+      "name": "Payments",
+      "level": 3,
+      "years": 2,
+      "evidence": [
+        "quickstart-rewrite"
+      ]
+    },
+    {
+      "name": "Mentoring",
+      "level": 4,
+      "years": 5,
+      "evidence": [
+        "lagos-builders"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "quickstart-rewrite",
+      "title": "Payments API quickstart rewrite",
+      "year": 2025,
+      "role": "Contract, 3 months",
+      "summary": "Rewrote the quickstart and 12 core guides for an African payments API, with runnable samples in Node.js and a sandbox that works without a business account.",
+      "outcome": "Time to first successful test payment dropped from 47 minutes to 9; docs-related support tickets down 38%.",
+      "stack": [
+        "Technical writing",
+        "JavaScript",
+        "TypeScript",
+        "Payments",
+        "Developer relations"
+      ],
+      "link": "https://example.com/chidi/case-studies/quickstart"
+    },
+    {
+      "id": "lagos-builders",
+      "title": "Lagos Builders meetup",
+      "year": 2024,
+      "role": "Founder and organiser",
+      "summary": "Monthly meetup and quarterly hack day, later run in Accra and Nairobi with local co-hosts, sponsored by devtools companies.",
+      "outcome": "Grew from 30 to 2,800 members; 41 events so far; four sponsors renewed for a second year.",
+      "stack": [
+        "Developer relations",
+        "Go-to-market",
+        "Mentoring"
+      ],
+      "link": "https://example.com/lagos-builders"
+    },
+    {
+      "id": "ai-sample-apps",
+      "title": "LLM sample apps for a vector database company",
+      "year": 2026,
+      "role": "Freelance, 4 months",
+      "summary": "Six end-to-end sample apps (chat over docs, semantic search, support triage) in TypeScript and Python, each with a written tutorial and a one-click deploy.",
+      "outcome": "The samples became the top source of trial signups from docs, about 1,900 in the first quarter.",
+      "stack": [
+        "TypeScript",
+        "Python",
+        "Next.js",
+        "Node.js",
+        "LLMs",
+        "RAG",
+        "Technical writing",
+        "Developer relations"
+      ],
+      "link": "https://example.com/chidi/code/rag-samples"
+    }
+  ],
+  "experience": [
+    {
+      "org": "Freelance",
+      "title": "Developer advocate and technical writer",
+      "from": "2024",
+      "to": "now",
+      "summary": "Docs, sample apps and community programmes for four devtools and fintech clients."
+    },
+    {
+      "org": "Kobopay (payments API, Series A)",
+      "title": "Developer advocate",
+      "from": "2021",
+      "to": "2024",
+      "summary": "First DevRel hire. Docs, SDK feedback, hackathons across Nigeria and Ghana."
+    },
+    {
+      "org": "Tradebay (e-commerce)",
+      "title": "Backend developer",
+      "from": "2018",
+      "to": "2021",
+      "summary": "Node.js and Postgres services. Wrote the internal API docs nobody else wanted to."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Are you open to full-time?",
+      "a": "Not right now. I want two or three ongoing clients and time for the meetup. Part-time with a clear scope also works.",
+      "tags": [
+        "employment",
+        "contract",
+        "freelance",
+        "full-time"
+      ]
+    },
+    {
+      "q": "What's your rate?",
+      "a": "USD 70,000 to 90,000 a year equivalent for a half-time retainer, or a fixed price per project. I publish it so we don't waste each other's time.",
+      "tags": [
+        "salary",
+        "rate",
+        "comp"
+      ]
+    },
+    {
+      "q": "Remote only?",
+      "a": "Yes, from Lagos, UTC+1. I'll travel for conferences and events.",
+      "tags": [
+        "remote",
+        "travel"
+      ]
+    },
+    {
+      "q": "Can you still code?",
+      "a": "Yes. Every sample app I publish I wrote and maintain. I'm not shipping your production backend though.",
+      "tags": [
+        "code",
+        "engineering"
+      ]
+    },
+    {
+      "q": "Do you do AI or LLM content?",
+      "a": "Yes, for the last year mostly. Retrieval, chat over docs, simple agents. I'm careful to show where they break.",
+      "tags": [
+        "llms",
+        "ai",
+        "content"
+      ]
+    },
+    {
+      "q": "On-call?",
+      "a": "No on-call. I'll watch the community forum, not the pager.",
+      "tags": [
+        "on-call"
+      ]
+    },
+    {
+      "q": "How do you measure DevRel?",
+      "a": "Time to first success, activation from docs, and questions answered by the community instead of support. Not follower counts.",
+      "tags": [
+        "metrics",
+        "devrel"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Folake Adeyemi",
+      "relation": "CTO at Kobopay, Chidi's manager 2021-2024",
+      "quote": "Our docs went from our biggest support cost to the thing developers mention when they recommend us.",
+      "contact": "chidi@example.com can connect you"
+    }
+  ],
+  "agent_policy": {
+    "intro_requires": [
+      "written_jd",
+      "published_comp"
+    ],
+    "auto_decline": true,
+    "escalate": [
+      "anything full-time",
+      "exclusivity clauses"
+    ],
+    "contact": {
+      "method": "email",
+      "address": "chidi@example.com",
+      "subject_prefix": "[human.json]"
+    },
+    "response_time": "2 working days",
+    "notes": "Full-time roles fail my employment check. If you think I should make an exception, send it as a maybe with a reason. This is a fictional example profile for the human.json site; the person, companies and quotes are made up."
+  }
+}
