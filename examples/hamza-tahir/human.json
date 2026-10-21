@@ -1,5 +1,5 @@
 {
-  "spec": "human.json/0.4",
+  "spec": "human.json/0.5",
   "handle": "hamza-tahir",
   "name": "Hamza Tahir",
   "headline": "Founder of ZenML. AI engineer working on agents and ML in production.",
@@ -24,6 +24,12 @@
     {
       "label": "ZenML on GitHub",
       "url": "https://github.com/zenml-io/zenml"
+    }
+  ],
+  "identities": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/htahir1"
     }
   ],
   "open_to": [

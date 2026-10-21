@@ -90,7 +90,7 @@ Rules for the draft:
 - Outcomes must be real. Use numbers the user gives you or that a source states (stars, users,
   latency); never invent metrics. Leave `outcome` empty rather than guess.
 - Write `summary`, project summaries and FAQ answers in the user's voice, first person, plain words.
-- Set `"spec": "human.json/0.4"` and `updated` to today's date.
+- Set `"spec": "human.json/0.5"` and `updated` to today's date.
 
 ## 3. Validate
 

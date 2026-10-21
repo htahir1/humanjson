@@ -84,6 +84,79 @@
         "$ref": "#/definitions/link"
       }
     },
+    "languages": {
+      "type": "array",
+      "maxItems": 12,
+      "description": "Languages the person works in, most preferred first. Agents write in the first one they can.",
+      "items": {
+        "type": "object",
+        "required": [
+          "tag"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "tag": {
+            "type": "string",
+            "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$",
+            "description": "A BCP 47 language tag, e.g. en, de, pt-BR."
+          },
+          "level": {
+            "enum": [
+              "native",
+              "fluent",
+              "working",
+              "basic"
+            ]
+          }
+        }
+      }
+    },
+    "availability": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "When and how to get time with the person.",
+      "properties": {
+        "booking_url": {
+          "type": "string",
+          "pattern": "^https://",
+          "maxLength": 500,
+          "description": "A scheduling link. Agents offer it only after a request passes the person's rules."
+        },
+        "away_until": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "Away until this date: agents expect no reply and don't follow up before it."
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 200
+        }
+      }
+    },
+    "identities": {
+      "type": "array",
+      "maxItems": 10,
+      "description": "The person's other accounts and sites. An agent trusts one only if that page links back to this file or the person's human.json page (rel=\"me\").",
+      "items": {
+        "type": "object",
+        "required": [
+          "url"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "url": {
+            "type": "string",
+            "pattern": "^https://",
+            "maxLength": 300
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 60
+          }
+        }
+      }
+    },
     "open_to": {
       "type": "array",
       "items": {

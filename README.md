@@ -3,7 +3,7 @@
 *Hello, human.* An open spec for one public file that tells AI agents what you've done, what you're
 open to, what you're not, and how to approach you. Think `robots.txt`, for people.
 
-- **Spec:** [protocol.md](protocol.md) (v0.4)
+- **Spec:** [protocol.md](protocol.md) (v0.5)
 - **Schema:** [schema/human.schema.json](schema/human.schema.json) (JSON Schema draft-07)
 - **Website:** [humanjson.org](https://humanjson.org) (make one, host one, see an example)
 - **Status:** draft. Feedback and proposals welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -12,7 +12,7 @@ open to, what you're not, and how to approach you. Think `robots.txt`, for peopl
 
 ```json
 {
-  "spec": "human.json/0.4",
+  "spec": "human.json/0.5",
   "name": "Noor Haddad",
   "headline": "ML platform engineer.",
   "location": { "city": "Berlin", "country": "DE", "utc_offset": 1 },

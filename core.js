@@ -76,6 +76,11 @@ var OH = (function () {
     if (pol.escalate && pol.escalate.length) L.push('- Leave these to me, don\'t negotiate them: ' + pol.escalate.join('; ') + '.');
     if (pol.contact) L.push('- Contact: ' + pol.contact.method + ' ' + (pol.contact.address || pol.contact.url || '') + (pol.contact.subject_prefix ? ', subject starting "' + pol.contact.subject_prefix + '"' : '') + '. One message per request.' + (pol.response_time ? ' I reply within ' + pol.response_time + '.' : ''));
     if (pol.feedback && pol.feedback.url) L.push('- After you decide, tell me why: POST a short structured note (verdict, the checks that decided it, what was missing) to ' + pol.feedback.url + '. It\'s how I learn what to change.');
+    if ((p.languages || []).length) L.push('- Write to me in ' + p.languages.map(function (x) { return x.tag + (x.level ? ' (' + x.level + ')' : ''); }).join(', ') + ', in that order of preference.');
+    var av = p.availability || {};
+    if (av.away_until) L.push('- I\'m away until ' + fmtDate(av.away_until) + '. Don\'t expect a reply or follow up before then.' + (av.note ? ' ' + av.note : ''));
+    if (av.booking_url) L.push('- If a request passes every check, offer a time with me: ' + av.booking_url);
+    if ((p.identities || []).length) L.push('- My other accounts (trust one only if it links back to this file): ' + p.identities.map(function (x) { return x.url; }).join(', '));
     if (pol.notes) L.push('- ' + pol.notes);
     L.push('');
     L.push('## What I\'m open to');
@@ -544,7 +549,7 @@ var OH = (function () {
     skills.sort(function (a, b) { return b.level - a.level || b.years - a.years; });
     var links = [{ label: 'GitHub', url: user.html_url || 'https://github.com/' + user.login }];
     if (user.blog) links.push({ label: 'Website', url: /^https?:/.test(user.blog) ? user.blog : 'https://' + user.blog });
-    return { name: user.name || user.login, headline: user.bio || '', photo: /^https:\/\//.test(user.avatar_url || '') ? user.avatar_url : undefined, summary: '', location: place(user.location), links: links, skills: skills, projects: projects,
+    return { name: user.name || user.login, headline: user.bio || '', photo: /^https:\/\//.test(user.avatar_url || '') ? user.avatar_url : undefined, summary: '', location: place(user.location), links: links, identities: [{ label: 'GitHub', url: 'https://github.com/' + user.login }], skills: skills, projects: projects,
       experience: [],
       sources: [{ type: 'github', ref: user.html_url || 'https://github.com/' + user.login, imported: (today || new Date().toISOString()).slice(0, 10) }] };
   }
@@ -643,6 +648,7 @@ var OH = (function () {
       rep.filled.push('location');
     }
     p.links = p.links || []; (part.links || []).forEach(function (l) { if (!p.links.some(function (x) { return x.url.replace(/\/$/, '') === l.url.replace(/\/$/, ''); })) { p.links.push(l); rep.links++; } });
+    (part.identities || []).forEach(function (x) { p.identities = p.identities || []; if (!p.identities.some(function (y) { return y.url.replace(/\/$/, '') === x.url.replace(/\/$/, ''); })) p.identities.push(x); });
     p.projects = p.projects || [];
     var idMap = {};
     (part.projects || []).forEach(function (x) {

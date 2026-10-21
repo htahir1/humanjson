@@ -1,5 +1,5 @@
 {
-  "spec": "human.json/0.4",
+  "spec": "human.json/0.5",
   "handle": "noor-haddad",
   "name": "Noor Haddad",
   "pronouns": "she/her",
@@ -20,6 +20,34 @@
     {
       "label": "Talk: Boring GPUs (PyData Berlin 2025)",
       "url": "https://example.com/talks/boring-gpus"
+    },
+    {
+      "label": "Writing",
+      "url": "https://example.com/noor/notes"
+    }
+  ],
+  "languages": [
+    {
+      "tag": "en",
+      "level": "fluent"
+    },
+    {
+      "tag": "de",
+      "level": "working"
+    },
+    {
+      "tag": "ar",
+      "level": "native"
+    }
+  ],
+  "availability": {
+    "booking_url": "https://example.com/noor/book-20min",
+    "note": "Mornings Berlin time work best."
+  },
+  "identities": [
+    {
+      "label": "Code",
+      "url": "https://example.com/noor/code"
     },
     {
       "label": "Writing",
