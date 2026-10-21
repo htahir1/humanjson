@@ -1,6 +1,6 @@
 ---
 name: human-json
-description: Create, update, check and publish the user's human.json from the terminal: the public file that tells agents what they've done, what they're open to and how to approach them. Use when the user wants to make, update or publish their human.json, or see the feedback agents left on it.
+description: "Create, update, check and publish the user's human.json from the terminal: the public file that tells agents what they've done, what they're open to and how to approach them. Use when the user wants to make, update or publish their human.json, or see the feedback agents left on it."
 ---
 
 # Make a human.json
