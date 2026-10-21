@@ -26,6 +26,20 @@
       "url": "https://github.com/zenml-io/zenml"
     }
   ],
+  "languages": [
+    {
+      "tag": "en"
+    },
+    {
+      "tag": "ur"
+    },
+    {
+      "tag": "pa"
+    },
+    {
+      "tag": "de"
+    }
+  ],
   "identities": [
     {
       "label": "GitHub",
