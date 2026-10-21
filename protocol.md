@@ -9,6 +9,7 @@ person's data but the person.
 - Skill names agents match on: [`vocabulary.json`](vocabulary.json)
 - Reference implementation (rendering, imports, matching): [`core.js`](core.js)
 - Instructions for an agent that helps someone write theirs: [`skill/SKILL.md`](skill/SKILL.md)
+- Source, issues and proposals: [github.com/htahir1/humanjson](https://github.com/htahir1/humanjson)
 
 Changes in v0.4: the project is now human.json (humanjson.org) and the file is `human.json` (found at
 `/.well-known/human.json`, media type `application/human+json`, spec `human.json/0.4`). `open_to` entries
